@@ -50,11 +50,11 @@ body {
   
   }
 
-  .current-temperature-icon {
+  .current-temperature-emoji {
     position: relative;
-    top: -8px;
+    top: -40px;
     font-size: 40px;
-    margin-right: 100px;
+    margin-left: 450px;
   }
 
 
