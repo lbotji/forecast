@@ -35,6 +35,12 @@ body {
  
 }
 
+.current-city .ubuntu-regular {
+ font-family: "Ubuntu", serif;
+ font-weight: 400;
+ font-style: normal;
+}
+
 
 
 
