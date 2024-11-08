@@ -25,7 +25,17 @@ body {
   border: solid 1px #00CDC0;
   padding: 6px;
   border-radius: 3px;
+  margin-left: 5px;
+  width: 15%;
+  
 }
+
+.current-weather {
+ padding: 20px;
+ 
+}
+
+
 
 
 
