@@ -19,6 +19,15 @@ body {
 
 }
 
+.search-button {
+  background: #00CDC0;
+  color: #FFFFFF;
+  border: solid 1px #00CDC0;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+
 
 
 
