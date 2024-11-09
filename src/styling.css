@@ -32,7 +32,7 @@ body {
  padding: 20px;
  
 }
-.current-city, .current-date {
+.current-city, .current-date, .current-temperature-value {
  font-family: "Noto Sans", sans-serif;
  font-weight: 400;
  font-style: normal;
@@ -43,16 +43,25 @@ body {
 }
 
 .current-date  {
- line-height: 20px;
+ line-height: 15px;
+ 
   
   }
 
   img {
     position: relative;
     top: -40px;
-    left: 20px;
+    right: 20px;
     font-size: 100px;
     margin-left: 450px;
+  }
+
+  .current-temperature-value {
+    position: relative;
+    font-size: 60px;
+    font-weight: bold;
+    top: -45px;
+    right: 18px;
   }
 
 
