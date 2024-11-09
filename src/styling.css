@@ -52,10 +52,14 @@ body .container {
 
 .current-date  {
  line-height: 15px;
+ }
+
+ p .Humidity, .Winds {
+  color: red;
+  font-weight: bold;
+ }
+
  
- 
-  
-  }
 
   img {
     position: relative;
