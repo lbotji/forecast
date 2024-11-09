@@ -47,10 +47,11 @@ body {
   
   }
 
-  .current-temperature-emoji {
+  img {
     position: relative;
     top: -40px;
-    font-size: 40px;
+    left: 20px;
+    font-size: 100px;
     margin-left: 450px;
   }
 
