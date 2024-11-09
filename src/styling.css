@@ -1,8 +1,10 @@
 body {
   background: #FFFFFF;
-  font-family: "Ubuntu", serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
-  }
+  font-style: normal;
+}
+  
 
 .search-input {
   background: #FFFFFF;
