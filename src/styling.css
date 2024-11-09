@@ -32,19 +32,18 @@ body {
  padding: 20px;
  
 }
-
-.current-city .ubuntu-regular {
- font-family: "Ubuntu", serif;
+.current-city, .current-date {
+ font-family: "Noto Sans", sans-serif;
  font-weight: 400;
  font-style: normal;
- font-size: 38px;
 }
 
-.current-date .ubuntu-regular {
- font-family: "Ubuntu", serif;
- font-weight: 400;
- font-style: normal;
- line-height: 24px;
+.current-city {
+ font-size: 40px;
+}
+
+.current-date  {
+ line-height: 20px;
   
   }
 
