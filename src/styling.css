@@ -48,14 +48,16 @@ body .container {
 
 .current-city {
  font-size: 40px;
+ font-weight: 800;
 }
 
 .current-date  {
  line-height: 15px;
+ color: gray;
  }
 
  p .Humidity, .Winds {
-  color: red;
+  color: #E95B5B;
   font-weight: bold;
  }
 
