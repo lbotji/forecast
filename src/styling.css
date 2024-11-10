@@ -79,6 +79,14 @@ body .container {
     right: 18px;
   }
 
+  .current-temperature-unit {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    right: -550px;
+    top: -120px;
+  }
+
 
 
 
