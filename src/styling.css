@@ -87,8 +87,12 @@ body .container {
     top: -120px;
   }
 
-  span .profile {
+  footer span .profile {
   color: green;
+  }
+
+  span .github link {
+   color: red;
   }
 
 
