@@ -21,14 +21,15 @@
      <main>
       <div class="curent-weather">
        <h1 class="current-city" id="city">Paris</h1>
-    <p class="current-date" id="current-date">
-    Tuesday 15:32, partly cloudy
+    <p class="current-date">
+    <span id="time"></span> <span id="description"></span>
     <br />
-    Humidity: <span class="Humidity">70%,</span> Winds: <span class="Winds">3.16km/h</span>
+    Humidity: <span id="Humidity"></span> Winds: <span id="wind-speed"></span>
   </p>
   </div>
   <div class="current-temperature">
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/854/original/partly_cloudy_icon.png?1731178905">
+    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" 
+    id="weather-icon"/>
     <span class="current-temperature-value" id="temperature">12</span>
     <span class="current-temperature-unit">°C</span>
   </div>
