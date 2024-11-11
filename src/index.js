@@ -1,6 +1,6 @@
 function displayTemperature(response) {
-  let temperatureElement = document.querySelector("#current-temperature-value")
-  let temperature = response.data.current.temperature;
+  let temperatureElement = document.querySelector("#temperature");
+  let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
 
   cityElement.innerHTML = response.data.city;
@@ -20,10 +20,12 @@ axios.get(apiUrl).then(displayTemperature);
 
 function searchSubmit (event) {
   event.preventDefault();
- let searchInput = document.querySelector("#search-input");
+ let searchInputElement = document.querySelector("#search-input");
  
  showCity = (searchInput.value); 
 }
 
 let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", searchSubmit)
+searchFormElement.addEventListener("submit", searchSubmit);
+
+showCity("Lisbon");
