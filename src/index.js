@@ -17,10 +17,10 @@ function displayWeather(response) {
 }
 
 function formatDate(date) {
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
+  let hours = currentDate.getHours();
+  let minutes = currentDate.getMinutes();
   let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  let day = days[date.getDay()];
+  let day = days[currentDate.getDay()];
 
    if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -35,7 +35,7 @@ function formatDate(date) {
 
 
 function showCity(city) {
-let apiKey = dac27f8d3491eb544bc74fd800f1to5c;
+let apiKey = "dac27f8d3491eb544bc74fd800f1to5c";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&unit=metric`;
 axios.get(apiUrl).then(displayWeather);
 
@@ -46,8 +46,7 @@ axios.get(apiUrl).then(displayWeather);
 function searchSubmit (event) {
   event.preventDefault();
  let searchInput = document.querySelector("#search-input");
- 
- showCity = (searchInput.value); 
+  
 }
 
 let searchFormElement = document.querySelector("#search-form");
