@@ -73,18 +73,16 @@ footer {
   position: relative;
   top: 30px;
   left: 100px;
- color: gray;
+  color: gray;
  }
 
- p .humidity, .winds {
-  color: #E95B5B;
+ #humidity, #winds {
+  color: #cf5959;
   font-weight: bold;
  }
 
  
-
-
-  .current-temperature-value {
+ .current-temperature-value {
     position: relative;
     font-size: 88px;
     font-weight: bold;
