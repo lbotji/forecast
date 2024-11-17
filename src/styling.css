@@ -139,14 +139,18 @@ footer {
     font-size: 30px;
   }
 
-
   .weather-forecast-temperature {
+    padding: 0 10px;
+  }
+
+
+  .weather-forecast-temperatures {
     text-align: center;
     color: #df6dbd;
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    padding: 0 10px;
+    
   }
 
 
