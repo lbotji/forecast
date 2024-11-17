@@ -123,9 +123,21 @@ footer {
   .weather-forecast {
     display: flex;
     justify-content: space-around;
+    margin-top: -80px;
   }
 
-  
+  .weather-forecast-date {
+    text-align: center;
+    color: rgb(3, 153, 143, 0.6);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .weather-forecast-icon {
+    text-align: center;
+    font-size: 30px;
+  }
 
 
 
