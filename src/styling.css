@@ -89,7 +89,7 @@ footer {
   color: gray;
  }
 
- .Humidity, .Wind {
+ #Humidity, #Wind {
   position: relative;
   top: 50px;
   color: #cf5959;
