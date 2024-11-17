@@ -120,6 +120,11 @@ footer {
     top: -220px;
   }
 
+  .weather-forecast {
+    display: flex;
+    justify-content: space-around;
+  }
+
   
 
 
