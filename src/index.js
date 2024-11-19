@@ -45,8 +45,6 @@ axios.get(apiUrl).then(displayWeather);
 
 }
 
-
-
 function searchSubmit (event) {
   event.preventDefault();
  let searchInput = document.querySelector("#search-input");
@@ -56,5 +54,7 @@ function searchSubmit (event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
+
+
 
 showCity("Lisbon");
