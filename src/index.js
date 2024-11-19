@@ -56,33 +56,27 @@ function searchSubmit(event) {
 
 function getForecast(city) {
   let apiKey = "dac27f8d3491eb544bc74fd800f1to5c";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apikey}&unit=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&unit=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
-
-
-
 function displayForecast(response) {
- 
+ let forecastHtml = "";
 
-  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
-  let forecastHtml = "";
-
-  days.forEach(function(day) {
+  response.data.daily.forEach(function(day, index) {
+    if (index <5) {
    forecastHtml = 
    forecastHtml +
-   
-    `<div class="weather-forecast-day">
-      <div class="weather-forecast-date">${day}.</div>
-      <div class = "weather-forecast-icon">🌤</div>
+  `<div class="weather-forecast-day">
+      <div class="weather-forecast-date"></div>
+    <img src = "${day.condition.icon_url}" class = "weather-forecast-icon" />
       <div class="weather-forecast-temperatures">
   <div class="weather-forecast-temperature">
-    <strong>15°</strong></div>
-  <div class="weather-forecast-temperature">9°</div>
+    <strong>${Math.round(day.temperature.maximum)}</strong></div>
+  <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}</div>
     </div>
      </div>`
-
+    }
 });
 }
 
@@ -90,10 +84,9 @@ function displayForecast(response) {
  forecastElement.innerHTML= forecastHtml;
 
 
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
-
-
 
 
 showCity("Lisbon");
