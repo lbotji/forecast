@@ -6,15 +6,18 @@ body {
    
 }
 
-div .container {
-  width: 300px;
-  height: 300px;
-  margin: 0;
-  border-radius: 10px;
-  background: #FFFFFF;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+ .container {
+ position: relative;
+ top: 50%;
+ left: 10%;
+ width: 920px;
+ height: 450px;
+ border-radius: 10px;
+ background: #FFFFFF;
+ font-family: "DM Sans", sans-serif;
+ font-weight: 300;
+ font-style: normal;
+ 
   
  
 }
@@ -50,6 +53,7 @@ div .container {
   border: none;
   padding: 11px;
   border-radius: 3px;
+  cursor: pointer;
   transition: all 250ms ease-in-out;
 
 }
@@ -57,6 +61,7 @@ div .container {
 .search-button:hover {
   color: #00CDC0;
   background: #FFFFFF;
+  border: solid 1px #2e9dac;
 }
 
 .current-city, .current-date, .current-temperature-value, footer {
@@ -76,7 +81,7 @@ footer {
 
 .current-city {
  position: relative;
- top: 50px;
+ top: 520px;
  left: 100px;
  font-size: 40px;
  font-weight: 800;
@@ -101,8 +106,8 @@ footer {
     position: relative;
     font-size: 88px;
     font-weight: bold;
-    top: -180px;
-    left: 520px;
+    top: 40px;
+    right: 20px;
   }
 
   .weather-icon {
@@ -117,7 +122,7 @@ footer {
     font-size: 25px;
     font-weight: bold;
     right: -515px;
-    top: -220px;
+    top: -50px;
   }
 
   .weather-forecast {
