@@ -73,6 +73,7 @@ footer {
  position: relative;
  top: 20px;
  left: 100px;
+ line-height: 10px;
  font-size: 40px;
  font-weight: 800;
 }
@@ -89,31 +90,30 @@ footer {
   color: #df6dbd;
  }
 
- 
-
- 
- .current-temperature-value {
-    position: relative;
-    font-size: 88px;
-    font-weight: bold;
-    top: -190px;
-    left: 550px;
-  }
-
   .weather-icon {
   position: relative;
   width: 120px;
   height: 120px;
-  right: -430px;
+  left: 600px;
   top: -65px;
 
  }
+ 
+.current-temperature-value {
+    position: relative;
+    font-size: 88px;
+    font-weight: bold;
+    top: -190px;
+    left: 720px;
+  }
+
+ 
 
   .current-temperature-unit {
     position: relative;
     font-size: 25px;
     font-weight: bold;
-    left: 540px;
+    left: 710px;
     top: -240px;
   }
 
