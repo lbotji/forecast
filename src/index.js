@@ -19,7 +19,7 @@ function displayWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   timeElement.innerHTML = formatDate(date);
 
-  getForecast(response.data.city);
+
 }
 
 function formatDate(date) {
@@ -52,43 +52,5 @@ function searchSubmit(event) {
  let searchInput = document.querySelector("#search-input");
  
  showCity(searchInput.value);
+
 }
-
-function getForecast(city) {
-  let apiKey = "dac27f8d3491eb544bc74fd800f1to5c";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&unit=metric`;
-  axios.get(apiUrl).then(displayForecast);
-}
-
-function displayForecast(response) {
-  console.log(response.data);
- let forecastHtml = "";
-  response.data.daily.forEach(function(day, index) {
-    if (index <5) {
-   forecastHtml = 
-   forecastHtml +
-  `
-  <div class="weather-forecast-day">
-   <div class="weather-forecast-date"></div>
-   <img src = "${day.condition.icon_url}" class ="weather-forecast-icon" />
-   <div class="weather-forecast-temperatures">
-   <div class="weather-forecast-temperature">
-   <strong>${Math.round(day.temperature.maximum)}</strong></div>
-   <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}</div>
-   </div>
-   </div>`;
-    }
-});
-}
-
- let forecastElement = document.querySelector("#forecast");
- forecastElement.innerHTML= forecastHtml;
- 
-
-
-
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", searchSubmit);
-
-
-showCity("Lisbon");
