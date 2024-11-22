@@ -19,8 +19,7 @@ function displayWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   timeElement.innerHTML = formatDate(date);
 
-
-}
+getForecast(response.data.city);}
 
 function formatDate(date) {
   let hours = date.getHours();
