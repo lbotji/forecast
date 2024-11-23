@@ -82,17 +82,17 @@ main {
 }
 
 .current-temperature-icon {
-  position: relative;
-  top: 6px;
-  left: -350px;
-  font-size: 88px;
-  margin-right: 10px;
+  position: fixed;
+  top: 200px;
+  right: 160px;
+  width: 88px;
+  height: 88px;
 }
 
 .current-temperature-value {
-  position: relative;
-  top: -18px;
-  left: 380px;
+  position: fixed;
+  top: 190px;
+  right: 110px;
   font-size: 88px;
   font-weight: bold;
 }
@@ -100,9 +100,9 @@ main {
 .current-temperature-unit {
   font-weight: bold;
   font-size: 28px;
-  position: relative;
-  top: -135px;
-  left: 420px;
+  position: fixed;
+  top: 196px;
+  right: 85px;
 }
 
 footer {
@@ -116,7 +116,7 @@ footer {
 .weather-forecast {
   display: flex;
   justify-content: space-around;
-  margin-top: 150px;
+  margin-top: 190px;
   margin-right: 900px
 }
 
