@@ -6,20 +6,22 @@ function displayWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
-  let date = new Date (response.data.time * 1000);
+  let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
 
- 
-  temperatureElement.innerHTML = Math.round(temperature);
-  iconElement.innerHTML = `<img src = "${response.data.condition.icon_url}" class="weather-icon"  />`;
   cityElement.innerHTML = response.data.city;
+  timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
-  timeElement.innerHTML = formatDate(date);
+  temperatureElement.innerHTML = Math.round(temperature);
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"`
 
-getForecast(response.data.city);}
+getForecast(response.data.city);
+
+}
+
 
 function formatDate(date) {
   let hours = date.getHours();
@@ -46,20 +48,13 @@ axios.get(apiUrl).then(displayWeather);
 
 }
 
-function searchSubmit(event) {
-  event.preventDefault();
- let searchInput = document.querySelector("#search-input");
- 
- showCity(searchInput.value);
-
-}
-
-
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
 
-  searchCity(searchInput.value);
+  showCity(searchInput.value);
+
+ 
 }
 
 function formatDay(timestamp) {
@@ -104,7 +99,8 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
-let searchFormElement = document.querySelector("#search-form");
+   let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Paris");
+
+showCity("Paris");

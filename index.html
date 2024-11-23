@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/styling.css" />
     <title>My weather application</title>
   </head>
   <body>
@@ -15,8 +15,9 @@
             type="search"
             placeholder="Enter a city.."
             required
-            class="search-input"
-            id="search-input"
+            id="search-form-input"
+            class="search-form-input"
+            
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
@@ -32,7 +33,7 @@
             </p>
           </div>
            <div class="current-temperature">
-  <div id="icon"></div> 
+  <div class= "current-temperature-icon"id="icon"></div> 
     <span class="current-temperature-value" id="temperature">12</span>
     <span class="current-temperature-unit">°C</span>
   </div>
