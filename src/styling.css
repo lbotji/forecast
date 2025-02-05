@@ -301,7 +301,7 @@ footer {
   padding: 0 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   
   .current-city {
   font-size: 15px;
@@ -330,8 +330,8 @@ footer {
 
 .current-temperature-unit {
   position: relative;
-  top: -145px;
-  left: 255px;
+  top: -150px;
+  left: 260px;
   font-weight: bold;
   font-size: 20px;
  
@@ -341,7 +341,7 @@ footer {
   position: relative;
   margin-top: 190px;
   padding-top: 50px;
-  left: -200px
+  left: -185px
 }
 
 
