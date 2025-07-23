@@ -1,8 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/156/822/original/sunset.jpg?1738869632");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif
 }
 
@@ -43,7 +47,7 @@ header {
 
 .search-form-input:hover{
   background: #b5dbd4;
-  color: rgb(4, 78, 100);
+  color: rgba(4, 78, 100);
 }
 
 .search-button {
@@ -60,7 +64,7 @@ header {
 
 .search-button:hover{
   background: #b5dbd4;
-  color: rgb(0, 74, 92);
+  color: rgba(0, 74, 92);
  
 }
 
@@ -112,7 +116,7 @@ main {
   left: 420px;
   font-size: 88px;
   font-weight: bold;
-   color: (21, 20, 26, 0.904);
+   color: rgba(21, 20, 26, 0.904);
 }
 
 .current-temperature-unit {
@@ -121,7 +125,7 @@ main {
   position: relative;
   top: -170px;
   left: 520px;
-  color: (21, 20, 26, 0.904);
+  color: rgba(21, 20, 26, 0.904);
 }
 
 footer {
@@ -129,7 +133,7 @@ footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
   padding-top: 10px;
-  color: rgb(0, 204, 255);
+  color: rgba(0, 204, 255);
 }
 
 a {
@@ -174,11 +178,11 @@ a {
  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/937/original/storm-clouds.jpg?1739736782");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif
+  overflow-x: hidden;
+  
 }
 
-}
+
 
 .dark button {
   background: #000000;
@@ -294,7 +298,7 @@ a {
   border-top: 1px solid #f9f7fe;
   text-align: center;
   padding-top: 25px;
-  color: rgba(0 74 92);
+  color: rgba(0, 74, 92, 1);
 }
 
 .dark .weather-forecast {
